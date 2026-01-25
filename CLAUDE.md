@@ -139,7 +139,9 @@ git push
 - DNS管理: Cloudflare
 - CNAMEファイル: リポジトリルートに配置済み
 
-### Cloudflare DNS設定（Apexドメイン）
+### Cloudflare DNS設定
+
+#### Apexドメイン（briscape.com）
 ```
 タイプ: A
 名前: @
@@ -151,7 +153,15 @@ IPv4アドレス:
 Proxy status: DNSのみ（グレーの雲アイコン）
 ```
 
-⚠️ **重要**: Proxy statusは「DNSのみ」に設定してください。
+#### wwwサブドメイン（www.briscape.com）
+```
+タイプ: CNAME
+名前: www
+ターゲット: briscape.com
+Proxy status: DNSのみ（グレーの雲アイコン）
+```
+
+⚠️ **重要**: Proxy statusは「DNSのみ」に設定してください。GitHubが自動的に`www.briscape.com`を`briscape.com`にリダイレクトします。
 
 ### GitHub Pages設定手順
 1. GitHubリポジトリの Settings → Pages
