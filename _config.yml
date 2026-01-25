@@ -5,8 +5,8 @@ author: Yo
 email: yosukezan@gmail.com
 
 # ビルド設定
-baseurl: "/logs4me" # リポジトリ名
-url: "https://champlasonic.github.io" # サイトのURL
+baseurl: "" # カスタムドメイン使用のため空にする
+url: "https://briscape.com" # サイトのURL
 
 # Jekyll設定
 markdown: kramdown

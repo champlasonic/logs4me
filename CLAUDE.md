@@ -131,3 +131,35 @@ git push
 2. `<head>`セクション内のGoogle Analyticsタグを探す
 3. `G-RYW0J47BKH`を新しい測定IDに置き換える
 4. 変更をコミット＆プッシュ
+
+## カスタムドメイン設定
+
+### 現在の設定
+- ドメイン: `briscape.com`
+- DNS管理: Cloudflare
+- CNAMEファイル: リポジトリルートに配置済み
+
+### Cloudflare DNS設定（Apexドメイン）
+```
+タイプ: A
+名前: @
+IPv4アドレス:
+  - 185.199.108.153
+  - 185.199.109.153
+  - 185.199.110.153
+  - 185.199.111.153
+Proxy status: DNSのみ（グレーの雲アイコン）
+```
+
+⚠️ **重要**: Proxy statusは「DNSのみ」に設定してください。
+
+### GitHub Pages設定手順
+1. GitHubリポジトリの Settings → Pages
+2. Custom domain欄に `briscape.com` を入力
+3. Save をクリック
+4. DNS設定が反映されるまで待つ（数分〜数時間）
+5. Enforce HTTPS にチェックを入れる
+
+### _config.yml設定
+- `baseurl: ""` （空）
+- `url: "https://briscape.com"`
