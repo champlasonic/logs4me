@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ワークスペースのセットアップ"
+title: "ワークスペースのセットアップpu"
 date: 2026-01-25
 categories: blog life
 permalink: /workspace-setup/
