@@ -5,8 +5,8 @@ author: Yo
 email: yosukezan@gmail.com
 
 # ビルド設定
-baseurl: "" # リポジトリ名（例: /blog）
-url: "" # サイトのURL（例: https://username.github.io）
+baseurl: "/logs4me" # リポジトリ名
+url: "https://champlasonic.github.io" # サイトのURL
 
 # Jekyll設定
 markdown: kramdown
