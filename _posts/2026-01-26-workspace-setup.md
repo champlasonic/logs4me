@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ワークスペースのセットアップ"
-date: 2026-01-26
+date: 2026-01-25
 categories: blog life
 permalink: /workspace-setup/
 ---
