@@ -119,3 +119,15 @@ git push
 ```
 
 **注意**: GitHubで削除した記事がローカルに残っている場合、マージコンフリクトが発生する可能性があります。その場合は、`git pull`でリモートの変更を取り込むか、ローカルファイルも削除してください。
+
+## Google Analytics設定
+
+### 測定ID
+- Google Analytics 4測定ID: `G-1G5G3LKZBW`
+- 設定場所: `_layouts/default.html`の`<head>`セクション
+
+### 測定IDを変更する場合
+1. `_layouts/default.html`を開く
+2. `<head>`セクション内のGoogle Analyticsタグを探す
+3. `G-1G5G3LKZBW`を新しい測定IDに置き換える
+4. 変更をコミット＆プッシュ
