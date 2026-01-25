@@ -123,11 +123,11 @@ git push
 ## Google Analytics設定
 
 ### 測定ID
-- Google Analytics 4測定ID: `G-1G5G3LKZBW`
+- Google Analytics 4測定ID: `G-RYW0J47BKH`
 - 設定場所: `_layouts/default.html`の`<head>`セクション
 
 ### 測定IDを変更する場合
 1. `_layouts/default.html`を開く
 2. `<head>`セクション内のGoogle Analyticsタグを探す
-3. `G-1G5G3LKZBW`を新しい測定IDに置き換える
+3. `G-RYW0J47BKH`を新しい測定IDに置き換える
 4. 変更をコミット＆プッシュ
