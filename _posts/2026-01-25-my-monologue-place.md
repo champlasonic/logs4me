@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ここは私の独り言の場所"
+title: "Markdown"
 date: 2026-01-25
 categories: blog
 permalink: /my-monologue-place/
@@ -8,7 +8,6 @@ permalink: /my-monologue-place/
 
 # Welcome
 
-ここは私の独り言の場所最初の投稿です。フフフ、ふふふふ
 This is the first post.
 
 ## How to Use Markdown
