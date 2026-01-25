@@ -28,7 +28,8 @@ title: home
   <div>
     {% assign sorted_categories = site.categories | sort %}
     {% for category in sorted_categories %}
-    <a href="{{ '/category/' | append: category[0] | slugify | append: '/' | relative_url }}" class="tag-cloud-item">
+    {% assign category_slug = category[0] | slugify %}
+    <a href="{{ site.baseurl }}/category/{{ category_slug }}/" class="tag-cloud-item">
       {{ category[0] }}
       <span class="count">({{ category[1].size }})</span>
     </a>
@@ -43,7 +44,7 @@ title: home
     {% assign date_parts = year_month.name | split: "-" %}
     {% assign year = date_parts[0] %}
     {% assign month = date_parts[1] %}
-    <a href="{{ '/archive/' | append: year | append: '/' | append: month | append: '/' | relative_url }}" class="archive-item">
+    <a href="{{ site.baseurl }}/archive/{{ year }}/{{ month }}/" class="archive-item">
       {{ year }}-{{ month }}
       <span class="count">({{ year_month.items.size }})</span>
     </a>
