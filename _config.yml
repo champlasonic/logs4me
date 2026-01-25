@@ -1,0 +1,35 @@
+# サイト設定
+title: logs4me
+description: Personal logs and musings
+author: Yo
+email: yosukezan@gmail.com
+
+# ビルド設定
+baseurl: "" # リポジトリ名（例: /blog）
+url: "" # サイトのURL（例: https://username.github.io）
+
+# Jekyll設定
+markdown: kramdown
+permalink: /:title/
+timezone: Asia/Tokyo
+
+# プラグイン
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 除外するファイル
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CLAUDE.md
+  - vendor/
+
+# デフォルト設定
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
