@@ -6,7 +6,7 @@ categories: vibecoding
 permalink: /vibe-coding/
 ---
 
-![vivalavivecoding](https://github.com/champlasonic/logs4me/blob/main/assets/images/Gemini_Generated_Image_pcmbxrpcmbxrpcmb.png)
+![vivalavivecoding](/assets/images/Gemini_Generated_Image_pcmbxrpcmbxrpcmb.png)
 
 10年来ずっと「いつかやろう」と思っていた手を付けられなかったGitHub Pagesを使った個人ブログがClude Codeのおかげで2時間ちょっとでできた。
 
