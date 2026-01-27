@@ -22,7 +22,7 @@ layout: default
   {% if page.categories %}
   <div class="post-categories">
     {% for category in page.categories %}
-    <a href="{{ '/category/' | append: category | slugify | append: '/' | relative_url }}" class="category">{{ category }}</a>
+    <a href="{{ '/category/' | append: category | append: '/' | relative_url }}" class="category">{{ category }}</a>
     {% endfor %}
   </div>
   {% endif %}
