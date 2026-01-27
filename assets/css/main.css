@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Special Elite', 'Shippori Mincho', 'Courier New', monospace;
+  font-family: 'New Tegomin', 'Shippori Mincho', serif;
   line-height: 1.7;
   color: #1a1a1a;
   background-color: #fafafa;
@@ -35,9 +35,9 @@ body {
 .site-title {
   margin: 0;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.05em;
-  font-family: 'Special Elite', 'Shippori Mincho', 'Courier Prime', monospace;
+  font-family: 'New Tegomin', 'Shippori Mincho', serif;
 }
 
 .site-title a {
@@ -232,7 +232,7 @@ body {
   background-color: #f0f0f0;
   padding: 3px 8px;
   border-radius: 4px;
-  font-family: 'Special Elite', 'Shippori Mincho', 'Courier Prime', 'Courier New', monospace;
+  font-family: 'Courier Prime', 'Courier New', monospace;
   font-size: 0.9em;
   color: #d63384;
 }
