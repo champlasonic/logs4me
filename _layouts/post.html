@@ -22,7 +22,13 @@ layout: default
   {% if page.categories %}
   <div class="post-categories">
     {% for category in page.categories %}
-    <a href="{{ '/category/' | append: category | append: '/' | relative_url }}" class="category">{{ category }}</a>
+      {% case category %}
+        {% when '短編日記' %}
+          {% assign category_url = 'short_essay' %}
+        {% else %}
+          {% assign category_url = category %}
+      {% endcase %}
+      <a href="{{ '/category/' | append: category_url | append: '/' | relative_url }}" class="category">{{ category }}</a>
     {% endfor %}
   </div>
   {% endif %}

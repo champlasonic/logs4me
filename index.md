@@ -28,11 +28,16 @@ title: home
   <div>
     {% assign sorted_categories = site.categories | sort %}
     {% for category in sorted_categories %}
-    {% assign category_slug = category[0] | slugify %}
-    <a href="{{ site.baseurl }}/category/{{ category_slug }}/" class="tag-cloud-item">
-      {{ category[0] }}
-      <span class="count">({{ category[1].size }})</span>
-    </a>
+      {% case category[0] %}
+        {% when '短編日記' %}
+          {% assign category_url = 'short_essay' %}
+        {% else %}
+          {% assign category_url = category[0] %}
+      {% endcase %}
+      <a href="{{ site.baseurl }}/category/{{ category_url }}/" class="tag-cloud-item">
+        {{ category[0] }}
+        <span class="count">({{ category[1].size }})</span>
+      </a>
     {% endfor %}
   </div>
 </div>
