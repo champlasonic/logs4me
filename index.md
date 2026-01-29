@@ -31,6 +31,8 @@ title: home
       {% case category[0] %}
         {% when '短編日記' %}
           {% assign category_url = 'short_essay' %}
+        {% when '腕時計' %}
+          {% assign category_url = 'watch' %}
         {% else %}
           {% assign category_url = category[0] %}
       {% endcase %}
