@@ -21,6 +21,7 @@ layout: default
 
   {% if page.categories %}
   <div class="post-categories">
+    <strong>Category:</strong>
     {% for category in page.categories %}
       {% case category %}
         {% when '短編日記' %}
@@ -32,6 +33,13 @@ layout: default
       {% endcase %}
       <a href="{{ '/category/' | append: category_url | append: '/' | relative_url }}" class="category">{{ category }}</a>
     {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if page.model %}
+  <div class="post-model">
+    <strong>Model:</strong>
+    <span class="model">{{ page.model }}</span>
   </div>
   {% endif %}
 
