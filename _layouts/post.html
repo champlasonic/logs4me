@@ -62,3 +62,11 @@ layout: default
     {% endif %}
   </div>
 </article>
+
+<script type="application/json" id="page-translations">
+{
+  "ja": {{ content | jsonify }},
+  "en": {{ page.translation_en | default: "" | jsonify }},
+  "zh": {{ page.translation_zh | default: "" | jsonify }}
+}
+</script>
