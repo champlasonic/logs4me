@@ -10,11 +10,33 @@ title: home
       <h2 class="post-item-title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h2>
-      <div class="post-item-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%B %d, %Y" }}
-        </time>
-      </div>
+    </div>
+    <div class="post-item-tags">
+      {% if post.categories %}
+        {% for category in post.categories %}
+          {% case category %}
+            {% when '短編日記' %}
+              {% assign category_url = 'short_essay' %}
+            {% when '腕時計' %}
+              {% assign category_url = 'watch' %}
+            {% else %}
+              {% assign category_url = category %}
+          {% endcase %}
+          <a href="{{ '/category/' | append: category_url | append: '/' | relative_url }}" class="post-item-tag category">{{ category }}</a>
+        {% endfor %}
+      {% endif %}
+      {% if post.model %}
+        {% case post.model %}
+          {% when '菊池寛' %}
+            {% assign model_url = 'kan-kikuchi' %}
+          {% else %}
+            {% assign model_url = post.model | slugify %}
+        {% endcase %}
+        <a href="{{ '/model/' | append: model_url | append: '/' | relative_url }}" class="post-item-tag model">{{ post.model }}</a>
+      {% endif %}
+      <time class="post-item-timestamp" datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%B %d, %Y" }}
+      </time>
     </div>
   </article>
 {% endfor %}

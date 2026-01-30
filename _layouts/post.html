@@ -39,7 +39,13 @@ layout: default
   {% if page.model %}
   <div class="post-model">
     <strong>Model:</strong>
-    <span class="model">{{ page.model }}</span>
+    {% case page.model %}
+      {% when '菊池寛' %}
+        {% assign model_url = 'kan-kikuchi' %}
+      {% else %}
+        {% assign model_url = page.model | slugify %}
+    {% endcase %}
+    <a href="{{ '/model/' | append: model_url | append: '/' | relative_url }}" class="model">{{ page.model }}</a>
   </div>
   {% endif %}
 

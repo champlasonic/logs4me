@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="category-header">
+  <h1 class="category-title">{{ page.model }}</h1>
+  <a href="{{ '/' | relative_url }}" class="back-link">← All Posts</a>
+</div>
+
+<div class="post-list">
+{% for post in site.posts %}
+  {% if post.model == page.model %}
+  <article class="post-item">
+    <div class="post-item-header">
+      <h2 class="post-item-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+    </div>
+    <div class="post-item-tags">
+      {% if post.categories %}
+        {% for category in post.categories %}
+          {% case category %}
+            {% when '短編日記' %}
+              {% assign category_url = 'short_essay' %}
+            {% when '腕時計' %}
+              {% assign category_url = 'watch' %}
+            {% else %}
+              {% assign category_url = category %}
+          {% endcase %}
+          <a href="{{ '/category/' | append: category_url | append: '/' | relative_url }}" class="post-item-tag category">{{ category }}</a>
+        {% endfor %}
+      {% endif %}
+      <time class="post-item-timestamp" datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%B %d, %Y" }}
+      </time>
+    </div>
+  </article>
+  {% endif %}
+{% endfor %}
+</div>
