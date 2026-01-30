@@ -270,12 +270,18 @@ body {
   filter: grayscale(0%);
 }
 
-.post-categories {
-  margin-top: 48px;
+.post-categories,
+.post-model {
+  margin-top: 16px;
   text-align: right;
 }
 
-.post-categories strong {
+.post-categories:first-of-type {
+  margin-top: 48px;
+}
+
+.post-categories strong,
+.post-model strong {
   font-size: 0.7rem;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -301,29 +307,16 @@ body {
   opacity: 0.6;
 }
 
-.post-model {
-  margin-top: 16px;
-  text-align: right;
-}
-
-.post-model strong {
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #999;
-}
-
 .model {
   display: inline-block;
-  background-color: #e8f4f8;
+  background-color: #f0f0f0;
   padding: 4px 10px;
   border-radius: 4px;
   margin-left: 6px;
   font-size: 0.7rem;
   font-weight: 400;
   letter-spacing: 0.02em;
-  color: #0066cc;
+  color: #666;
 }
 
 .post-navigation {
