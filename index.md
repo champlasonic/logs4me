@@ -44,6 +44,30 @@ title: home
   </div>
 </div>
 
+<div class="tag-cloud">
+  <div>
+    {% assign models = site.posts | map: "model" | compact | uniq | sort %}
+    {% for model in models %}
+      {% assign model_count = 0 %}
+      {% for post in site.posts %}
+        {% if post.model == model %}
+          {% assign model_count = model_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      {% case model %}
+        {% when '菊池寛' %}
+          {% assign model_url = 'kan-kikuchi' %}
+        {% else %}
+          {% assign model_url = model | slugify %}
+      {% endcase %}
+      <a href="{{ site.baseurl }}/model/{{ model_url }}/" class="tag-cloud-item">
+        {{ model }}
+        <span class="count">({{ model_count }})</span>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
 <div class="archive">
   <div>
     {% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
