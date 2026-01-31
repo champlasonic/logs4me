@@ -12,7 +12,7 @@ title: home
       </h2>
       <div class="post-item-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%B %d, %Y" }}
+          {{ post.date | date: "%Y年%m月%d日" }}
         </time>
       </div>
     </div>
