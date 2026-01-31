@@ -24,8 +24,9 @@ title: home
 <p>No posts yet.</p>
 {% endif %}
 
-<div class="tag-cloud">
-  <div>
+<div class="footer-tags">
+  <div class="footer-tag-section">
+    <strong>Categories:</strong>
     {% assign sorted_categories = site.categories | sort %}
     {% for category in sorted_categories %}
       {% case category[0] %}
@@ -36,49 +37,32 @@ title: home
         {% else %}
           {% assign category_url = category[0] %}
       {% endcase %}
-      <a href="{{ site.baseurl }}/category/{{ category_url }}/" class="tag-cloud-item">
-        {{ category[0] }}
-        <span class="count">({{ category[1].size }})</span>
-      </a>
+      <a href="{{ site.baseurl }}/category/{{ category_url }}/" class="footer-tag-link">{{ category[0] }}</a>{% unless forloop.last %},{% endunless %}
     {% endfor %}
   </div>
-</div>
 
-<div class="tag-cloud">
-  <div>
+  <div class="footer-tag-section">
+    <strong>Models:</strong>
     {% assign models = site.posts | map: "model" | compact | uniq | sort %}
     {% for model in models %}
-      {% assign model_count = 0 %}
-      {% for post in site.posts %}
-        {% if post.model == model %}
-          {% assign model_count = model_count | plus: 1 %}
-        {% endif %}
-      {% endfor %}
       {% case model %}
         {% when '菊池寛' %}
           {% assign model_url = 'kan-kikuchi' %}
         {% else %}
           {% assign model_url = model | slugify %}
       {% endcase %}
-      <a href="{{ site.baseurl }}/model/{{ model_url }}/" class="tag-cloud-item">
-        {{ model }}
-        <span class="count">({{ model_count }})</span>
-      </a>
+      <a href="{{ site.baseurl }}/model/{{ model_url }}/" class="footer-tag-link">{{ model }}</a>{% unless forloop.last %},{% endunless %}
     {% endfor %}
   </div>
-</div>
 
-<div class="archive">
-  <div>
+  <div class="footer-tag-section">
+    <strong>Published:</strong>
     {% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
     {% for year_month in postsByYearMonth %}
-    {% assign date_parts = year_month.name | split: "-" %}
-    {% assign year = date_parts[0] %}
-    {% assign month = date_parts[1] %}
-    <a href="{{ site.baseurl }}/archive/{{ year }}/{{ month }}/" class="archive-item">
-      {{ year }}-{{ month }}
-      <span class="count">({{ year_month.items.size }})</span>
-    </a>
+      {% assign date_parts = year_month.name | split: "-" %}
+      {% assign year = date_parts[0] %}
+      {% assign month = date_parts[1] %}
+      <a href="{{ site.baseurl }}/archive/{{ year }}/{{ month }}/" class="footer-tag-link">{{ year }}-{{ month }}</a>{% unless forloop.last %},{% endunless %}
     {% endfor %}
   </div>
 </div>
