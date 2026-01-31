@@ -1,12 +1,31 @@
 # サイト設定
 title: brilliant scape
-description: Personal logs and musings
-author: Yo
-email: yosukezan@gmail.com
+description: 日本近代文学の文体で綴る日常のライフログ。生成AIを活用し、菊池寛や織田作之助などの文豪の文体で感情や思考を記録する実験的な試み。
+tagline: 文豪の文体で綴る、私のためのライフログ
+author:
+  name: Yosuke Yoshizaki
+  email: yosukezan@gmail.com
+  twitter: yozniax
+lang: ja_JP
 
 # ビルド設定
 baseurl: "" # カスタムドメイン使用のため空にする
 url: "https://briscape.com" # サイトのURL
+
+# ソーシャルメディア設定
+twitter:
+  username: yozniax
+  card: summary_large_image
+social:
+  name: Yosuke Yoshizaki
+  links:
+    - https://twitter.com/yozniax
+    - https://linkedin.com/in/champlasonic
+    - https://facebook.com/champlasonic
+    - https://bsky.app/profile/briscape.bsky.social
+
+# OGP設定
+logo: /assets/images/logo.png
 
 # Jekyll設定
 markdown: kramdown
@@ -28,6 +47,10 @@ exclude:
 
 # デフォルト設定
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-default.png
   - scope:
       path: ""
       type: "posts"
