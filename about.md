@@ -24,27 +24,19 @@ permalink: /about/
 
 ## 自己紹介
 
-**吉崎陽介（Yosuke Yoshizaki）** / ニックネーム: Yoz
+**Yosuke Yoshizaki）**
 
-1971年4月20日生まれ、埼玉県在住。妻と二人の娘がいます。現在はクラスメソッド株式会社でリテールアプリケーション部門のマネージャーをしています。
+音楽業界で10年の経験を経たあと、インターネット業界で20年働いてきました。Eコマース、広告、戦略的パートナーシップ、スタートアップ、マーケティングなどの分野で経験を積んできました。
 
-インターネット業界で長年働いてきました。Eコマース、広告、戦略的パートナーシップ、スタートアップ、マーケティングなどの分野で経験を積んできました。
-
-### 連絡先
-
-- **Email:** yosukezan@gmail.com
-- **LinkedIn:** [linkedin.com/in/champlasonic](https://linkedin.com/in/champlasonic)
-- **Twitter/X:** [x.com/yozniax](https://x.com/yozniax)
-- **Facebook:** [facebook.com/champlasonic](https://facebook.com/champlasonic)
 
 ### スキルと資格
 
 モバイルマーケティング、事業管理、起業などを得意としています。
 
 保有資格：
-- AWS Certified Cloud Practitioner
+- AWS Certified AI Practitioner (CLF)
+- AWS Certified Cloud Practitioner (AIF)
 - Google Cloud Certified Cloud Digital Leader (CDL)
-- 第一種運転免許
 
 ### 言語
 
@@ -53,12 +45,11 @@ permalink: /about/
 - **中国語**: 初学者。ビジネスニーズから学習中
 - **韓国語**: 初学者。ビジネスや文化的興味から基本的な理解を深めています
 
-ビジネスにおいては、韓国、中国、東南アジアでの豊富な異文化経験、現地パートナーシップ、ビジネス慣行への深い理解が言語能力を補っています。ネットワークと文化理解は、言語の流暢さだけよりも価値がある場合が多いです。
+韓国、中国、東南アジアでの豊富な異文化経験、現地パートナーシップ、ビジネス慣行への深い理解が言語能力を補っています。ネットワークと文化理解は、言語の流暢さだけよりも価値がある場合が多いです。
 
 ### 学歴
 
 - **立命館大学** (1990 - 1994)
-  - 社会科学部 学士
 
 ### 趣味・興味
 
@@ -106,3 +97,8 @@ permalink: /about/
 **その他**
 - サッカー観戦（Jリーグ、京都サンガ）
 - 読書全般
+
+### 連絡先
+- **LinkedIn:** [linkedin.com/in/champlasonic](https://linkedin.com/in/champlasonic)
+- **Twitter/X:** [x.com/yozniax](https://x.com/yozniax)
+- **Facebook:** [facebook.com/champlasonic](https://facebook.com/champlasonic)
