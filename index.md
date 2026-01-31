@@ -26,22 +26,6 @@ title: home
 
 <div class="footer-tags">
   <div class="footer-tag-section">
-    <strong>Categories:</strong>
-    {% assign sorted_categories = site.categories | sort %}
-    {% for category in sorted_categories %}
-      {% case category[0] %}
-        {% when '短編日記' %}
-          {% assign category_url = 'short_essay' %}
-        {% when '腕時計' %}
-          {% assign category_url = 'watch' %}
-        {% else %}
-          {% assign category_url = category[0] %}
-      {% endcase %}
-      <a href="{{ site.baseurl }}/category/{{ category_url }}/" class="footer-tag-link">{{ category[0] }}</a>{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  </div>
-
-  <div class="footer-tag-section">
     <strong>Models:</strong>
     {% assign models = site.posts | map: "model" | compact | uniq | sort %}
     {% for model in models %}
