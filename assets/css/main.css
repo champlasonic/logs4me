@@ -79,44 +79,6 @@ body {
   filter: grayscale(0%);
 }
 
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.language-toggle {
-  display: flex;
-  gap: 4px;
-  background-color: #f0f0f0;
-  padding: 3px;
-  border-radius: 6px;
-}
-
-.lang-btn {
-  background-color: transparent;
-  border: none;
-  padding: 4px 10px;
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  color: #666;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-  font-family: 'New Tegomin', 'Shippori Mincho', serif;
-}
-
-.lang-btn:hover {
-  background-color: #e0e0e0;
-}
-
-.lang-btn.active {
-  background-color: #fff;
-  color: #000;
-  font-weight: 500;
-}
-
 .site-nav {
   display: flex;
   gap: 32px;
@@ -499,23 +461,6 @@ body {
 
   .site-title {
     font-size: 1.4rem;
-  }
-
-  .header-container {
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .header-right {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    width: 100%;
-  }
-
-  .language-toggle {
-    width: 100%;
-    justify-content: center;
   }
 
   .site-content {
