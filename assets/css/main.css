@@ -405,6 +405,76 @@ body {
   opacity: 0.6;
 }
 
+/* About Page */
+.site-content h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #000;
+  letter-spacing: 0.02em;
+}
+
+.site-content h2:first-of-type {
+  margin-top: 0;
+}
+
+.site-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.site-content p {
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.site-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+
+.site-content ul li {
+  padding-left: 20px;
+  margin-bottom: 8px;
+  position: relative;
+  line-height: 1.8;
+}
+
+.site-content ul li::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+  color: #666;
+}
+
+.site-content strong {
+  font-weight: 600;
+  color: #000;
+}
+
+.site-content a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  transition: opacity 0.2s ease;
+}
+
+.site-content a:hover {
+  opacity: 0.5;
+}
+
+.site-content hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 48px 0;
+}
+
 /* Footer */
 .site-footer {
   background-color: transparent;
