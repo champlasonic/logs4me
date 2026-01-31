@@ -36,7 +36,7 @@ layout: default
     {% endif %}
 
     <div class="footer-tag-section">
-      <strong>投稿日:</strong>
+      <strong>Published:</strong>
       {% assign year = page.date | date: "%Y" %}
       {% assign month = page.date | date: "%m" %}
       <a href="{{ site.baseurl }}/archive/{{ year }}/{{ month }}/" class="footer-tag-link">{{ year }}-{{ month }}</a>

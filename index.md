@@ -42,7 +42,7 @@ title: home
   </div>
 
   <div class="footer-tag-section">
-    <strong>投稿日:</strong>
+    <strong>Published:</strong>
     {% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
     {% for year_month in postsByYearMonth %}
       {% assign date_parts = year_month.name | split: "-" %}
