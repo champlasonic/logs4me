@@ -65,7 +65,6 @@ url: "https://USERNAME.github.io"  # あなたのGitHub Pages URL
 layout: post
 title: "投稿のタイトル"
 date: 2026-01-25
-categories: blog
 ---
 
 ここに本文を書きます。マークダウン形式で書けます。

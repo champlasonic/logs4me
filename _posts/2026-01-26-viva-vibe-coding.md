@@ -2,7 +2,6 @@
 layout: post
 title: "生成AIのおかげ"
 date: 2026-01-26
-categories: vibecoding
 model: 菊池寛
 permalink: /vibe-coding/
 ---

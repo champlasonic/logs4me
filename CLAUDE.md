@@ -28,7 +28,6 @@ Jekyllベースの個人ブログシステム
 layout: post
 title: "記事のタイトル"
 date: 2026-01-25
-categories: blog
 permalink: /custom-url/
 ---
 ```
@@ -36,7 +35,6 @@ permalink: /custom-url/
 - `layout`: 通常は `post` を指定
 - `title`: 記事のタイトル（必須）
 - `date`: 公開日（YYYY-MM-DD形式）
-- `categories`: カテゴリー（blog, tech, design, lifeなど）
 - `permalink`: カスタムURL（オプション）
 
 ### Markdownの書き方

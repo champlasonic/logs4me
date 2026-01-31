@@ -17,21 +17,8 @@ layout: default
       </h2>
     </div>
     <div class="post-item-tags">
-      {% if post.categories %}
-        {% for category in post.categories %}
-          {% case category %}
-            {% when '短編日記' %}
-              {% assign category_url = 'short_essay' %}
-            {% when '腕時計' %}
-              {% assign category_url = 'watch' %}
-            {% else %}
-              {% assign category_url = category %}
-          {% endcase %}
-          <a href="{{ '/category/' | append: category_url | append: '/' | relative_url }}" class="post-item-tag category">{{ category }}</a>
-        {% endfor %}
-      {% endif %}
       <time class="post-item-timestamp" datetime="{{ post.date | date_to_xmlschema }}">
-        {{ post.date | date: "%B %d, %Y" }}
+        {{ post.date | date: "%Y年%m月%d日" }}
       </time>
     </div>
   </article>
