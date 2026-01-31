@@ -3,8 +3,7 @@ title: brilliant scape
 description: 日本近代文学の文体で綴る日常のライフログ。生成AIを活用し、菊池寛や織田作之助などの文豪の文体で感情や思考を記録する実験的な試み。
 tagline: 文豪の文体で綴る、私のためのライフログ
 author:
-  name: Yosuke Yoshizaki
-  email: yosukezan@gmail.com
+  name: Yo Yoshizaki
   twitter: yozniax
 lang: ja_JP
 
@@ -17,7 +16,7 @@ twitter:
   username: yozniax
   card: summary_large_image
 social:
-  name: Yosuke Yoshizaki
+  name: Yo Yoshizaki
   links:
     - https://twitter.com/yozniax
     - https://linkedin.com/in/champlasonic
