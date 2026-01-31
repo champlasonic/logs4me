@@ -406,7 +406,7 @@ body {
 }
 
 /* About Page */
-.site-content h2 {
+.about-page h2 {
   font-size: 1.4rem;
   font-weight: 700;
   margin-top: 80px;
@@ -416,11 +416,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-.site-content h2:first-of-type {
+.about-page h2:first-of-type {
   margin-top: 0;
 }
 
-.site-content h3 {
+.about-page h3 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-top: 48px;
@@ -428,25 +428,25 @@ body {
   letter-spacing: 0.02em;
 }
 
-.site-content p {
+.about-page p {
   line-height: 2.0;
   margin-bottom: 20px;
 }
 
-.site-content ul {
+.about-page ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 20px;
 }
 
-.site-content ul li {
+.about-page ul li {
   padding-left: 24px;
   margin-bottom: 12px;
   position: relative;
   line-height: 2.0;
 }
 
-.site-content ul li::before {
+.about-page ul li::before {
   content: "▸";
   position: absolute;
   left: 0;
@@ -454,23 +454,23 @@ body {
   font-size: 0.85em;
 }
 
-.site-content strong {
+.about-page strong {
   font-weight: 600;
   color: #000;
 }
 
-.site-content a {
+.about-page a {
   color: #000;
   text-decoration: none;
   border-bottom: 1px solid #000;
   transition: opacity 0.2s ease;
 }
 
-.site-content a:hover {
+.about-page a:hover {
   opacity: 0.5;
 }
 
-.site-content hr {
+.about-page hr {
   border: none;
   border-top: 1px solid #e0e0e0;
   margin: 60px 0;
