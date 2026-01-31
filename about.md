@@ -1,6 +1,6 @@
 ---
 layout: about
-title: logs4me
+title: brilliant scape
 permalink: /about/
 ---
 
