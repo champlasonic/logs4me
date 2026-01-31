@@ -6,7 +6,7 @@ model: 菊池寛
 permalink: /vibe-coding/
 ---
 
-![vivavivecoding](/assets/images/Gemini_Generated_Image_pcmbxrpcmbxrpcmb.png)
+![vivavivecoding]({{ '/assets/images/Gemini_Generated_Image_pcmbxrpcmbxrpcmb.png' | relative_url }})
 
 十年である。
 

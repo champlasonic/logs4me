@@ -8,7 +8,7 @@ author:
 lang: ja_JP
 
 # ビルド設定
-baseurl: "" # カスタムドメイン使用のため空にする
+baseurl: "/logs4me" # サブディレクトリでの運用
 url: "https://briscape.com" # サイトのURL
 
 # ソーシャルメディア設定
@@ -24,7 +24,7 @@ social:
     - https://bsky.app/profile/briscape.bsky.social
 
 # OGP設定
-logo: /assets/images/logo.png
+logo: /logs4me/assets/images/logo.png
 
 # Jekyll設定
 markdown: kramdown
@@ -49,7 +49,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/og-default.png
+      image: /logs4me/assets/images/og-default.png
   - scope:
       path: ""
       type: "posts"
