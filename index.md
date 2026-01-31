@@ -32,6 +32,8 @@ title: home
       {% case model %}
         {% when '菊池寛' %}
           {% assign model_url = 'kan-kikuchi' %}
+        {% when '織田作之助' %}
+          {% assign model_url = 'sakunosuke-oda' %}
         {% else %}
           {% assign model_url = model | slugify %}
       {% endcase %}

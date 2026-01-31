@@ -25,6 +25,8 @@ layout: default
     {% case page.model %}
       {% when '菊池寛' %}
         {% assign model_url = 'kan-kikuchi' %}
+      {% when '織田作之助' %}
+        {% assign model_url = 'sakunosuke-oda' %}
       {% else %}
         {% assign model_url = page.model | slugify %}
     {% endcase %}
