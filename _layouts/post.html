@@ -19,20 +19,29 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.model %}
-  <div class="post-model">
-    <strong>Model:</strong>
-    {% case page.model %}
-      {% when '菊池寛' %}
-        {% assign model_url = 'kan-kikuchi' %}
-      {% when '織田作之助' %}
-        {% assign model_url = 'sakunosuke-oda' %}
-      {% else %}
-        {% assign model_url = page.model | slugify %}
-    {% endcase %}
-    <a href="{{ '/model/' | append: model_url | append: '/' | relative_url }}" class="model">{{ page.model }}</a>
+  <div class="footer-tags">
+    {% if page.model %}
+    <div class="footer-tag-section">
+      <strong>Model:</strong>
+      {% case page.model %}
+        {% when '菊池寛' %}
+          {% assign model_url = 'kan-kikuchi' %}
+        {% when '織田作之助' %}
+          {% assign model_url = 'sakunosuke-oda' %}
+        {% else %}
+          {% assign model_url = page.model | slugify %}
+      {% endcase %}
+      <a href="{{ '/model/' | append: model_url | append: '/' | relative_url }}" class="footer-tag-link">{{ page.model }}</a>
+    </div>
+    {% endif %}
+
+    <div class="footer-tag-section">
+      <strong>Published:</strong>
+      {% assign year = page.date | date: "%Y" %}
+      {% assign month = page.date | date: "%m" %}
+      <a href="{{ site.baseurl }}/archive/{{ year }}/{{ month }}/" class="footer-tag-link">{{ year }}-{{ month }}</a>
+    </div>
   </div>
-  {% endif %}
 
   <div class="post-navigation">
     {% if page.previous.url %}
