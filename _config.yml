@@ -30,6 +30,7 @@ logo: /assets/images/logo.png
 markdown: kramdown
 permalink: /:title/
 timezone: Asia/Tokyo
+excerpt_separator: "\n\n"  # 記事の最初の段落を抜粋として自動抽出
 
 # プラグイン
 plugins:
