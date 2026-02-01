@@ -4,7 +4,10 @@ title: "二月の空"
 date: 2026-02-01
 model: 太宰治
 permalink: /winter-sky/
+image: /assets/images/20260201a.jpg
 ---
+
+![二月の空](/assets/images/20260201a.jpg)
 
 二月である。
 
