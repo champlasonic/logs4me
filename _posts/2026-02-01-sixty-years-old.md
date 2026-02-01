@@ -5,7 +5,6 @@ date: 2026-02-01
 model: 司馬遼太郎
 permalink: /sixty-years-old/
 image: /assets/images/20260201.jpg
-description: AIと対話しながら、五年後の六十歳を見据える。定年、家族、住宅ローン。不安の中で見出した道は、文化への貢献だった。歴史的視点から人生の転機を考察する。
 ---
 
 ![六十歳の分水嶺](/assets/images/20260201.jpg)

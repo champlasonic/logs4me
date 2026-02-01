@@ -5,7 +5,6 @@ date: 2026-01-26
 model: 菊池寛
 permalink: /vibe-coding/
 image: /assets/images/Gemini_Generated_Image_pcmbxrpcmbxrpcmb.png
-description: 十年間、先送りにしてきた個人ブログ。生成AIの力を借りて、たった一日で完成させた。vibe codingという新しいスタイル。人工知能が、私の夢を実現してくれた。
 ---
 
 ![vivavivecoding](/assets/images/Gemini_Generated_Image_pcmbxrpcmbxrpcmb.png)
