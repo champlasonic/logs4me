@@ -5,6 +5,7 @@ date: 2026-01-31
 model: 泉鏡花
 permalink: /musume-yamai/
 image: /assets/images/20260131.jpg
+description: 次女がインフルエンザで三日間熱に魘されている。隔離された奥の部屋から聞こえる小さな咳。vibe codingに没頭しながらも、心は病む娘のもとにあった。
 ---
 
 ![病む娘と画面の光](/assets/images/20260131.jpg)
