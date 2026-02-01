@@ -4,6 +4,7 @@ title: "生成AIのおかげ"
 date: 2026-01-26
 model: 菊池寛
 permalink: /vibe-coding/
+image: /assets/images/Gemini_Generated_Image_pcmbxrpcmbxrpcmb.png
 ---
 
 ![vivavivecoding](/assets/images/Gemini_Generated_Image_pcmbxrpcmbxrpcmb.png)

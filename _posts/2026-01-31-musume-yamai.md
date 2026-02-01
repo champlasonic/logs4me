@@ -4,6 +4,7 @@ title: "病む娘と画面の光"
 date: 2026-01-31
 model: 泉鏡花
 permalink: /musume-yamai/
+image: /assets/images/20260131.jpg
 ---
 
 ![病む娘と画面の光](/assets/images/20260131.jpg)

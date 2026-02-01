@@ -4,6 +4,7 @@ title: "六十歳の分水嶺"
 date: 2026-02-01
 model: 司馬遼太郎
 permalink: /sixty-years-old/
+image: /assets/images/20260201.jpg
 ---
 
 ![六十歳の分水嶺](/assets/images/20260201.jpg)
