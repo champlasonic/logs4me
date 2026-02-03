@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "地震の記憶（中原中也モデル）"
+title: "地震の記憶"
 date: 2026-02-03
+model: 中原中也
 permalink: /earthquake-memories-chuya/
+image: /assets/images/20260203.jpg
 ---
+
+![地震の記憶](/assets/images/20260203.jpg)
 
 午後六時、地面が揺れた。
 
