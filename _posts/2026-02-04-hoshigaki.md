@@ -4,7 +4,10 @@ title: "干柿を求めて"
 date: 2026-02-04
 model: 柿本人麻呂
 permalink: /hoshigaki/
+image: /assets/images/20260204.jpg
 ---
+
+![干柿を求めて](/assets/images/20260204.jpg)
 
 余は市に出でて干柿を求む。
 
