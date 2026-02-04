@@ -28,14 +28,79 @@ Jekyllベースの個人ブログシステム
 layout: post
 title: "記事のタイトル"
 date: 2026-01-25
+model: モデル名
 permalink: /custom-url/
+image: /assets/images/YYYYMMDD.jpg
 ---
 ```
 
 - `layout`: 通常は `post` を指定
-- `title`: 記事のタイトル（必須）
+- `title`: 記事のタイトル（必須）**タイトルにモデル名を含めないこと**
 - `date`: 公開日（YYYY-MM-DD形式）
+- `model`: 文体モデルの名前（例: 村上春樹、太宰治、中原中也）
 - `permalink`: カスタムURL（オプション）
+- `image`: 記事の画像パス（オプション）
+
+### 🚨 重要：新しい記事作成時のワークフロー
+
+新しい記事を作成する際は、**必ず以下の手順を守ること**：
+
+#### ステップ1: モデルページの確認
+```bash
+# 使用するモデルのページが既に存在するか確認
+ls model/*.md
+grep -h "^model:" _posts/*.md | sort -u
+```
+
+#### ステップ2: モデルページが存在しない場合は作成
+```bash
+# 例：柿本人麻呂のモデルページを作成
+# ファイル名: model/[英語名].md
+# 内容:
+---
+layout: model
+title: モデル名
+model: モデル名
+permalink: /model/[英語名]/
+---
+```
+
+**モデルページの命名規則：**
+- 村上春樹 → `model/haruki-murakami.md`
+- 太宰治 → `model/osamu-dazai.md`
+- 中原中也 → `model/chuya-nakahara.md`
+- 柿本人麻呂 → `model/kakinomoto-no-hitomaro.md`
+- 司馬遼太郎 → `model/ryotaro-shiba.md`
+
+#### ステップ3: 記事とモデルページを同時にコミット
+```bash
+# 記事とモデルページを同時に追加
+git add _posts/YYYY-MM-DD-title.md model/model-name.md
+
+# コミット
+git commit -m "Add new post: タイトル (モデル名) and model page
+
+Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+
+# プッシュ
+git push
+```
+
+#### ステップ4: 画像がある場合は追加
+```bash
+# 画像を記事に追加後
+git add _posts/YYYY-MM-DD-title.md assets/images/YYYYMMDD.jpg
+git commit -m "Add image to タイトル post
+
+Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+git push
+```
+
+**⚠️ 絶対に守ること：**
+1. タイトルにモデル名を含めない（例：❌「記事タイトル（村上春樹モデル）」→ ✅「記事タイトル」）
+2. YAMLフロントマターに `model:` フィールドを必ず追加
+3. 新しいモデルを使用する場合、記事作成と同時にモデルページも作成
+4. 記事とモデルページを同じコミットでプッシュ
 
 ### Markdownの書き方
 
