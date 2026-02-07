@@ -34,6 +34,20 @@ title: home
           {% assign model_url = 'kan-kikuchi' %}
         {% when '織田作之助' %}
           {% assign model_url = 'sakunosuke-oda' %}
+        {% when '太宰治' %}
+          {% assign model_url = 'osamu-dazai' %}
+        {% when '村上春樹' %}
+          {% assign model_url = 'haruki-murakami' %}
+        {% when '司馬遼太郎' %}
+          {% assign model_url = 'ryotaro-shiba' %}
+        {% when '中原中也' %}
+          {% assign model_url = 'chuya-nakahara' %}
+        {% when '泉鏡花' %}
+          {% assign model_url = 'kyoka-izumi' %}
+        {% when '柿本人麻呂' %}
+          {% assign model_url = 'kakinomoto-no-hitomaro' %}
+        {% when '安部公房' %}
+          {% assign model_url = 'kobo-abe' %}
         {% else %}
           {% assign model_url = model | slugify %}
       {% endcase %}
