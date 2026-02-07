@@ -4,7 +4,10 @@ title: "蹴球の季節"
 date: 2026-02-05
 model: 安部公房
 permalink: /football-season/
+image: /assets/images/20260207.jpeg
 ---
+
+![蹴球の季節](/assets/images/20260207.jpeg)
 
 また、蹴球の季節が巡ってきた。
 
