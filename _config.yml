@@ -37,6 +37,19 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# モデル（著者）名 → 著者ページのURLスラッグ（日本語は slugify されないため必須）
+model_permalinks:
+  北大路魯山人: kitaoji-roshanjin
+  中原中也: chuya-nakahara
+  安部公房: kobo-abe
+  柿本人麻呂: kakinomoto-no-hitomaro
+  村上春樹: haruki-murakami
+  太宰治: osamu-dazai
+  織田作之助: sakunosuke-oda
+  菊池寛: kan-kikuchi
+  泉鏡花: kyoka-izumi
+  司馬遼太郎: ryotaro-shiba
+
 # 除外するファイル
 exclude:
   - Gemfile

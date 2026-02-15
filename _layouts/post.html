@@ -23,14 +23,7 @@ layout: default
     {% if page.model %}
     <div class="footer-tag-section">
       <strong>Model:</strong>
-      {% case page.model %}
-        {% when '菊池寛' %}
-          {% assign model_url = 'kan-kikuchi' %}
-        {% when '織田作之助' %}
-          {% assign model_url = 'sakunosuke-oda' %}
-        {% else %}
-          {% assign model_url = page.model | slugify %}
-      {% endcase %}
+      {% assign model_url = site.model_permalinks[page.model] | default: page.model | slugify %}
       <a href="{{ '/model/' | append: model_url | append: '/' | relative_url }}" class="footer-tag-link">{{ page.model }}</a>
     </div>
     {% endif %}

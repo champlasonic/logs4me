@@ -71,11 +71,21 @@ permalink: /model/[英語名]/
 - 中原中也 → `model/chuya-nakahara.md`
 - 柿本人麻呂 → `model/kakinomoto-no-hitomaro.md`
 - 司馬遼太郎 → `model/ryotaro-shiba.md`
+- 北大路魯山人 → `model/kitaoji-roshanjin.md`
 
-#### ステップ3: 記事とモデルページを同時にコミット
+#### ステップ2b: 著者（モデル）ページのリンクを有効にする
+記事の「Model」リンクは `_config.yml` の `model_permalinks` で制御しています。**新しいモデルを追加したら、必ずここにも1行追加すること。** 追加しないと記事から著者ページへ正しくリンクされません。
+
+```yaml
+# _config.yml の model_permalinks に追加
+  モデル名（日本語）: url-slug
+# 例：北大路魯山人: kitaoji-roshanjin
+```
+
+#### ステップ3: 記事・モデルページ・_config.yml を同時にコミット
 ```bash
-# 記事とモデルページを同時に追加
-git add _posts/YYYY-MM-DD-title.md model/model-name.md
+# 記事・モデルページ・_config.yml（model_permalinks 追加分）を同時に追加
+git add _posts/YYYY-MM-DD-title.md model/model-name.md _config.yml
 
 # コミット
 git commit -m "Add new post: タイトル (モデル名) and model page
@@ -99,8 +109,8 @@ git push
 **⚠️ 絶対に守ること：**
 1. タイトルにモデル名を含めない（例：❌「記事タイトル（村上春樹モデル）」→ ✅「記事タイトル」）
 2. YAMLフロントマターに `model:` フィールドを必ず追加
-3. 新しいモデルを使用する場合、記事作成と同時にモデルページも作成
-4. 記事とモデルページを同じコミットでプッシュ
+3. 新しいモデルを使用する場合、記事作成と同時に (a) モデルページ（`model/<slug>.md`）を作成し、(b) `_config.yml` の `model_permalinks` に「モデル名: slug」を1行追加する
+4. 記事・モデルページ・`_config.yml` の変更を同じコミットでプッシュ（著者ページへのリンクが有効になる）
 
 ### Markdownの書き方
 
