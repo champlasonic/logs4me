@@ -34,6 +34,7 @@ permalink: /about/
 
 - AWS Certified AI Practitioner (AIF)
 - AWS Certified Cloud Practitioner (CLF)
+- Google Generative AI Leader (GAIL)
 - Google Cloud Certified Cloud Digital Leader (CDL)
 
 ### 言語
