@@ -49,6 +49,7 @@ model_permalinks:
   菊池寛: kan-kikuchi
   泉鏡花: kyoka-izumi
   司馬遼太郎: ryotaro-shiba
+  中谷宇吉郎: ukichiro-nakaya
 
 # 除外するファイル
 exclude:
