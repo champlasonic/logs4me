@@ -36,6 +36,7 @@ excerpt_separator: "\n\n"  # 記事の最初の段落を抜粋として自動抽
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # モデル（著者）名 → 著者ページのURLスラッグ（日本語は slugify されないため必須）
 model_permalinks:
