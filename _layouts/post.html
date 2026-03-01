@@ -7,9 +7,13 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-meta">
       <div class="post-meta-line">
-        <time datetime="{{ page.date | date_to_xmlschema }}">
-          {{ page.date | date: "%B %d, %Y" }}
-        </time>
+        {% assign year = page.date | date: "%Y" %}
+        {% assign month = page.date | date: "%m" %}
+        <a href="{{ site.baseurl }}/archive/{{ year }}/{{ month }}/" class="post-meta-date-link">
+          <time datetime="{{ page.date | date_to_xmlschema }}">
+            {{ page.date | date: "%B %d, %Y" }}
+          </time>
+        </a>
         {% if page.author %}
         <span class="post-author">by {{ page.author }}</span>
         {% endif %}
@@ -24,16 +28,6 @@ layout: default
 
   <div class="post-content">
     {{ content }}
-  </div>
-
-  <div class="footer-tags">
-
-    <div class="footer-tag-section">
-      <strong>Published:</strong>
-      {% assign year = page.date | date: "%Y" %}
-      {% assign month = page.date | date: "%m" %}
-      <a href="{{ site.baseurl }}/archive/{{ year }}/{{ month }}/" class="footer-tag-link">{{ year }}-{{ month }}</a>
-    </div>
   </div>
 
   <div class="post-navigation">
