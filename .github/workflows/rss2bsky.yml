@@ -9,9 +9,19 @@ jobs:
   post:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Post to Bluesky
         uses: joschi/blueskyfeedbot@v1
         with:
           rss-feed: "https://briscape.com/feed.xml"
           username: ${{ secrets.BLUESKY_IDENTIFIER }}
           password: ${{ secrets.BLUESKY_PASSWORD }}
+          cache-file: ".bluesky-cache.json"
+      - name: Commit cache
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .bluesky-cache.json
+          git commit -m "Update Bluesky feed cache" || exit 0
+          git push
