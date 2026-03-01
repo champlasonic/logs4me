@@ -12,6 +12,13 @@ layout: default
       {% if page.author %}
       <span class="post-author">by {{ page.author }}</span>
       {% endif %}
+      {% if page.model %}
+      <span class="post-model">
+        &nbsp;&bull;&nbsp; Model:
+        {% assign model_url = site.model_permalinks[page.model] | default: page.model | slugify %}
+        <a href="{{ '/model/' | append: model_url | append: '/' | relative_url }}">{{ page.model }}</a>
+      </span>
+      {% endif %}
     </div>
   </header>
 
@@ -20,13 +27,6 @@ layout: default
   </div>
 
   <div class="footer-tags">
-    {% if page.model %}
-    <div class="footer-tag-section">
-      <strong>Model:</strong>
-      {% assign model_url = site.model_permalinks[page.model] | default: page.model | slugify %}
-      <a href="{{ '/model/' | append: model_url | append: '/' | relative_url }}" class="footer-tag-link">{{ page.model }}</a>
-    </div>
-    {% endif %}
 
     <div class="footer-tag-section">
       <strong>Published:</strong>
