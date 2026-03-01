@@ -192,7 +192,11 @@ body {
 }
 
 .post-meta-date-link {
-  color: #999;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }

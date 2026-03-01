@@ -11,7 +11,7 @@ layout: default
         {% assign month = page.date | date: "%m" %}
         <a href="{{ site.baseurl }}/archive/{{ year }}/{{ month }}/" class="post-meta-date-link">
           <time datetime="{{ page.date | date_to_xmlschema }}">
-            {{ page.date | date: "%B %d, %Y" }}
+            {{ page.date | date: "%Y年%m月%d日" }}
           </time>
         </a>
         {% if page.author %}
