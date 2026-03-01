@@ -12,6 +12,6 @@ jobs:
       - name: Post to Bluesky
         uses: joschi/blueskyfeedbot@v1
         with:
-          feed: "https://briscape.com/feed.xml"
-          bluesky-identifier: ${{ secrets.BLUESKY_IDENTIFIER }}
-          bluesky-password: ${{ secrets.BLUESKY_PASSWORD }}
+          rss-feed: "https://briscape.com/feed.xml"
+          username: ${{ secrets.BLUESKY_IDENTIFIER }}
+          password: ${{ secrets.BLUESKY_PASSWORD }}
