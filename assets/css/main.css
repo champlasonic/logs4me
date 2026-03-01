@@ -174,11 +174,18 @@ body {
 }
 
 .post-meta {
-  color: #999;
+  color: #1a1a1a;
   font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.post-meta-line {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -186,6 +193,23 @@ body {
 
 .post-author {
   margin-left: 12px;
+}
+
+.post-model {
+  display: block;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.post-model a {
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid #1a1a1a;
+  transition: opacity 0.2s ease;
+}
+
+.post-model a:hover {
+  opacity: 0.6;
 }
 
 .post-content {
@@ -284,11 +308,6 @@ body {
 .post-categories {
   margin-top: 16px;
   text-align: right;
-}
-
-.post-model {
-  display: inline-flex;
-  align-items: center;
 }
 
 .post-categories:first-of-type {
