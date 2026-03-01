@@ -482,17 +482,39 @@ body {
   padding: 60px 0 40px 0;
   border-top: 1px solid #e0e0e0;
   margin-top: 100px;
-  text-align: center;
   color: #999;
   font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
+.site-footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer .rss-link {
+  color: #999;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.site-footer .rss-link:hover {
+  color: #000;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
     padding: 0 32px;
+  }
+
+  .site-footer .footer-container {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
   }
 
   .site-header {

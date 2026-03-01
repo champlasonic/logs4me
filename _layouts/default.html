@@ -48,8 +48,14 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-container">
       <p>&copy; 2016-{{ site.time | date: '%Y' }} Briscape. All rights reserved.</p>
+      <a href="{{ '/feed.xml' | relative_url }}" class="rss-link" title="Subscribe via RSS" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss" viewBox="0 0 16 16">
+          <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+          <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.247 0 9.5 4.253 9.5 9.5a1 1 0 0 1-2 0C8.981 11.5 6.5 9.019 6.5 6a1 1 0 0 1-1-1h-1z"/>
+        </svg>
+      </a>
     </div>
   </footer>
 </body>
