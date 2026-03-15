@@ -8,7 +8,7 @@ title: home
   <article class="post-item">
     <div class="post-item-header">
       <h2 class="post-item-title">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% if post.model %}{% assign model_url = site.model_permalinks[post.model] | default: post.model | slugify %} <span class="post-item-model">by <a href="{{ site.baseurl }}/model/{{ model_url }}/">{{ post.model }}</a></span>{% endif %}
       </h2>
       <div class="post-item-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">

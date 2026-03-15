@@ -140,6 +140,22 @@ body {
   opacity: 0.6;
 }
 
+.post-item-model {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #999;
+  letter-spacing: 0.03em;
+}
+
+.post-item-model a {
+  color: #999;
+  text-decoration: none;
+}
+
+.post-item-model a:hover {
+  opacity: 0.6;
+}
+
 .post-item-meta {
   color: #999;
   font-size: 0.75rem;
