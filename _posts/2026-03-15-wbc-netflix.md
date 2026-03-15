@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "テレビのない球場"
+title: "みえない球場"
 date: 2026-03-15
 model: 寺山修司
 permalink: /wbc-netflix/
