@@ -4,6 +4,7 @@ title: "みえない球場"
 date: 2026-03-15
 model: 寺山修司
 permalink: /wbc-netflix/
+image: /assets/images/20260315.jpg
 ---
 
 テレビを捨てよ、球場へ行こう——しかしその球場は、誰も映してくれないのだ。
