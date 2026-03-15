@@ -321,9 +321,17 @@ body {
   color: #f8f8f2;
 }
 
-.post-content img,
-.post-image img {
+.post-content img {
   max-width: 100%;
+  height: auto;
+  margin: 32px 0;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.post-image img {
+  width: 100%;
   height: auto;
   margin: 32px 0;
   border-radius: 8px;
@@ -335,6 +343,7 @@ body {
 .post-image img:hover {
   filter: grayscale(0%);
 }
+
 
 .post-categories {
   margin-top: 16px;

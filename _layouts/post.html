@@ -30,6 +30,14 @@ layout: default
   <div class="post-image">
     <img src="{{ page.image }}" alt="{{ page.title }}">
   </div>
+  <script>
+    (function() {
+      var heroSrc = "{{ page.image }}";
+      document.querySelectorAll('.post-content img').forEach(function(img) {
+        if (img.getAttribute('src') === heroSrc) img.style.display = 'none';
+      });
+    })();
+  </script>
   {% endif %}
 
   <div class="post-content">
