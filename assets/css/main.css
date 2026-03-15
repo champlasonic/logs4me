@@ -321,7 +321,8 @@ body {
   color: #f8f8f2;
 }
 
-.post-content img {
+.post-content img,
+.post-image img {
   max-width: 100%;
   height: auto;
   margin: 32px 0;
@@ -330,7 +331,8 @@ body {
   transition: filter 0.3s ease;
 }
 
-.post-content img:hover {
+.post-content img:hover,
+.post-image img:hover {
   filter: grayscale(0%);
 }
 
