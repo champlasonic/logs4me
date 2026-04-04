@@ -52,6 +52,7 @@ model_permalinks:
   中谷宇吉郎: ukichiro-nakaya
   町田町蔵: machizo-machida
   寺山修司: shuji-terayama
+  坂口安吾: ango-sakaguchi
 
 # 除外するファイル
 exclude:

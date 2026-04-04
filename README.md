@@ -50,6 +50,30 @@ baseurl: "/REPOSITORY-NAME"  # リポジトリ名
 url: "https://USERNAME.github.io"  # あなたのGitHub Pages URL
 ```
 
+### 新しい model 名を使うとき
+
+記事の front matter に新しい `model:` 名を追加する場合は、投稿ファイルだけでは不十分です。毎回あわせて次の2点も追加してください。
+
+1. `_config.yml` の `model_permalinks` に `モデル名: slug` を追加
+2. `model/<slug>.md` を作成して `/model/<slug>/` の一覧ページを用意
+
+例:
+
+```yaml
+# _config.yml
+model_permalinks:
+  坂口安吾: ango-sakaguchi
+```
+
+```markdown
+---
+layout: model
+title: 坂口安吾
+model: 坂口安吾
+permalink: /model/ango-sakaguchi/
+---
+```
+
 ## 新しい投稿の作成方法
 
 ### GitHubのWeb UIで作成（推奨）
