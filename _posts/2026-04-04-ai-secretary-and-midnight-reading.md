@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI秘書と夜半の読書"
+title: "有能秘書と夜更けの読書"
 date: 2026-04-04
 model: 坂口安吾
 permalink: /ai-secretary-and-midnight-reading/
